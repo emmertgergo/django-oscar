@@ -16,6 +16,7 @@ Including another URLconf
 from django.apps import apps
 from django.urls import include, path
 from django.contrib import admin
+from . import views
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -24,6 +25,7 @@ urlpatterns = [
     # Nonetheless, it's often useful for debugging.
 
     path('admin/', admin.site.urls),
+    path('', views.index),
 
     path('', include(apps.get_app_config('oscar').urls[0])),
 ]
