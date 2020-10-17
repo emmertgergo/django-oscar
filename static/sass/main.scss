@@ -717,7 +717,7 @@
 
 	#header {
 		position: relative;
-		background-image: url('../../images/header.jpg');
+		background-image: url('../images/header.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -1084,7 +1084,7 @@
 				position: absolute;
 				top: 50%;
 				margin: -1.5em 0 0 0;
-				background: url('images/arrow.svg') no-repeat center center;
+				background: url('../images/arrow.svg') no-repeat center center;
 			}
 
 			&:hover {
@@ -1480,7 +1480,7 @@
 					top: 0;
 					width: 100%;
 					height: 100%;
-					background: url('images/overlay.png');
+					background: url('../images/overlay.png');
 					background-size: 128px 128px;
 				}
 
