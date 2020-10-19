@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+        <link rel="stylesheet" href="{% static "css/own_bootstrap.css" %}">
+        <script src="{% static "js/bootstrap.js" %}"></script>
+	</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="{% static "images/logo.png" %}" height="50px" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+</header>
+{% block content %}{% endblock %}
+<footer class="footer bg-danger d-flex">
+    <div class="row ">
+        <div class="col-2 col-md">
+            Hello
+        </div>
+        <div class="col-2 col-md">
+            <h5>Features</h5>
+            <div class="d-flex">
+                <ul class="list-inline mx-auto justify-content-center">
+                    <li>
+                        <a>Elso Feature</a>
+                    </li>
+                    <li>
+                        <a>Masodik Feature</a>
+                    </li>
+                    <li>
+                        <a>Harmadik Feature</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2 col-md">
+            <h5>Features</h5>
+            <ul>
+                <li>
+                    <a>Elso Feature</a>
+                </li>
+                <li>
+                    <a>Masodik Feature</a>
+                </li>
+                <li>
+                    <a>Harmadik Feature</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

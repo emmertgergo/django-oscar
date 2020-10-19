@@ -7,3 +7,7 @@ def index(request):
 
 def bootstrap_test(request):
     return render(request, 'bootstrap_test.html')
+
+
+def bootstrap_row_columns(request):
+    return render(request, 'bootstrap_row_columns.html')

@@ -27,6 +27,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index.html', views.index),
     path('bootstrap_test.html', views.bootstrap_test),
+    path('bootstrap_row_columns.html', views.bootstrap_row_columns),
+
 
     path('', include(apps.get_app_config('oscar').urls[0])),
 ]
